@@ -42,7 +42,7 @@ function Masker(w,h,x,y,ew,eh){
 
 
 function draw() {
-  background(0,0,200);
+  background(0,100,200);
   image(masker.get(),50,50,100,100);
   selfie.copy(vid,vid.width/2-vid.height/2,0,vid.height,vid.height,0,0,selfie.width, selfie.height);
   push();
