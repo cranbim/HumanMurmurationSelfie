@@ -13,10 +13,11 @@ function setup() {
   var constraints = {
     audio: false,
     video: {
-      mandatory: {
-        minWidth:1280,
-        minHeight:720
-      }
+      // mandatory: {
+      //   minWidth:1280,
+      //   minHeight:720
+      // }
+      facingMode: "user"
     }
   }
   vid=createCapture(constraints);
