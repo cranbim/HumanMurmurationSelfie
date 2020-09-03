@@ -43,7 +43,7 @@ function Masker(w,h,x,y,ew,eh){
 
 
 function draw() {
-  background(200,0,100);
+  background(100,0,200);
   image(vid,100,100);
   // image(masker.get(),50,50,100,100);
   
