@@ -44,29 +44,31 @@ function Masker(w,h,x,y,ew,eh){
 
 function draw() {
   background(200,0,100);
-  image(masker.get(),50,50,100,100);
-  selfie.copy(vid,vid.width/2-vid.height/2,0,vid.height,vid.height,0,0,selfie.width, selfie.height);
-  push();
-  imageMode(CENTER);
-  // image(vid,width/2, height/2);
-  translate(width/2, height/2);
-  scale(-1,1);
-  image(selfie,0,0);
+  image(vid,100,100);
+  // image(masker.get(),50,50,100,100);
   
-  pop();
-  drawGuide();
-  snap.show();
-  if(snap.click()){
-    console.log("snap");
-    // noLoop();
-    takeSelfie();
-    image(selfieSnap,0,0,100,100);
+  // selfie.copy(vid,vid.width/2-vid.height/2,0,vid.height,vid.height,0,0,selfie.width, selfie.height);
+  // push();
+  // imageMode(CENTER);
+  // // image(vid,width/2, height/2);
+  // translate(width/2, height/2);
+  // scale(-1,1);
+  // image(selfie,0,0);
+  
+  // pop();
+  // drawGuide();
+  // snap.show();
+  // if(snap.click()){
+  //   console.log("snap");
+  //   // noLoop();
+  //   takeSelfie();
+  //   image(selfieSnap,0,0,100,100);
     
     
-  }
-  if(receivedImage){
-    image(receivedImage,100,100,200,200);
-  }
+  // }
+  // if(receivedImage){
+  //   image(receivedImage,100,100,200,200);
+  // }
   
   // if(selfie64 && !receivedImage){
   //   receivedImage=loadImage(selfie64);
